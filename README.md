@@ -1,0 +1,1 @@
+All practise code and assignments for AngularJS course
