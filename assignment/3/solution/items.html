@@ -1,0 +1,9 @@
+<ul>
+	<li ng-repeat="item in narrowItDown.found"> {{item.name}}
+		<ul>
+			<li>{{item.description}}</li>
+			<li>{{item.price_large}}</li>
+		</ul>
+	</li>
+</ul>
+<div ng-show="narrowItDown.searched && narrowItDown.found.size==0">Nothing Found!</div>

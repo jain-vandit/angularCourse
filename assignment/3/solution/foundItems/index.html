@@ -1,0 +1,14 @@
+<div>
+	<div ng-hide="list.length">
+		Nothing Found
+	</div>
+	<ul>
+	<li ng-repeat="item in list"> {{item.name}} ({{item.short_name}}) 
+		<button type="button" class="btn btn-danger pull-right" ng-click="removeItem($index)">Don't want this one!</button>
+		<ul>
+			<li>{{item.description}}</li>
+			<li>{{item.price_large}}</li>
+		</ul>
+	</li>
+	</ul>
+</div>
